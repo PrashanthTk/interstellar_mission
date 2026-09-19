@@ -298,6 +298,11 @@ export default function InterstellarMissionDashboard(props: MyComponentProps) {
                     gap: 24,
                     alignItems: "start",
                     width: "100%",
+                    minHeight: 0,
+                    height: "calc(100% - 78px)",
+                    maxHeight: "calc(100% - 78px)",
+                    overflow: "auto",
+                    overflowY: "auto",
                 }}
             >
                 <div style={{ display: "grid", gap: 12 }}>

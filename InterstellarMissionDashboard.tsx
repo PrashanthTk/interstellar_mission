@@ -58,6 +58,15 @@ const defaultItems: TechnologyItem[] = [
     { name: "ISRU Refinery", mass: 95, cost: 80000000, value: 64 },
     { name: "AI Core", mass: 40, cost: 210000000, value: 88 },
     { name: "Solar Array", mass: 160, cost: 90000000, value: 58 },
+    { name: "Cryogenic Beds", mass: 160, cost: 90000000, value: 58 },
+    { name: "Waste Management System", mass: 160, cost: 90000000, value: 58 },
+    { name: "Propulsion System", mass: 200, cost: 90000000, value: 96 },
+    { name: "Communication System", mass: 160, cost: 90000000, value: 58 },
+    { name: "Navigation System", mass: 160, cost: 90000000, value: 58 },
+    { name: "Science Lab", mass: 120, cost: 90000000, value: 72 },
+    { name: "Medical Bay", mass: 160, cost: 90000000, value: 58 },
+    { name: "Storage Unit", mass: 40, cost: 90000000, value: 30 },
+    { name: "Power System", mass: 80, cost: 90000000, value: 44 },
 ]
 
 function formatMoney(value: number): string {
@@ -298,6 +307,11 @@ export default function InterstellarMissionDashboard(props: MyComponentProps) {
                     gap: 24,
                     alignItems: "start",
                     width: "100%",
+                    minHeight: 0,
+                    height: "calc(100% - 78px)",
+                    maxHeight: "calc(100% - 78px)",
+                    overflow: "auto",
+                    overflowY: "auto",
                 }}
             >
                 <div style={{ display: "grid", gap: 12 }}>
